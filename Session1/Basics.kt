@@ -174,7 +174,7 @@ fun main() {
     
     when(age)
     {
-        in 1..18 -> println("You can't Vote Now")
+        in 1..17 -> println("You can't Vote Now")
         18-> println("You are Finally 18")
         else ->println("You can legally vote right Now")
     }
