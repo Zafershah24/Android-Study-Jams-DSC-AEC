@@ -1,6 +1,7 @@
 
 var myVariable="Hello" //Mutable Type
 myVariable="Hola" 
+print(myVariable.reversed()) //To Reverse a String
 
 val  myVariable1="Good Evening" //Immutable Type
 println(myVariable1.toUpperCase())
@@ -13,6 +14,8 @@ val Contains=myVariable1.contains("good")
   println(Contains)
 
 
+
+/////////////////////////////////////////////////////////////////////////////////////////
 //Type Inference done Explicitly 
 
 var boolVariable:Boolean=true
@@ -29,6 +32,8 @@ fun main() {
 	println(x!=y)
 }
 
+
+/////////////////////////////////////////////////////////////////////////////////////////
 //If- Else Blocks
 
 fun main() {
@@ -50,6 +55,8 @@ fun main() {
 	println(z)
 }
 
+
+/////////////////////////////////////////////////////////////////////////////////////////
 //While Block 
 
 
@@ -63,4 +70,96 @@ fun main() {
     
 println("Done")
 }
+
+/////////////////////////////////////////////////////////////////////////////////////////
+// Ranges in Kotlin
+for (i in 5..10)
+println(i)
+
+for (i in 10 downTo 5 step 2) // Top-Down implementation
+println(i)
+
+/////////////////////////////////////////////////////////////////////////////////////////
+// Array Implementation (Arrays are Mutable in Nature)
+
+fun main() {
+	val names=arrayOf("Kotlin","Python","Dart","Java")
+//     for (name in names)
+//     {
+//         println(name)
+//     }
+//  
+	
+// Doing the same thing using While Block
+ val arrayLength=names.size
+    var i=0
+    while(i<arrayLength){
+        println(names[i])
+        i++
+    }
+}
+
+//Find the Greates Number from an Array
+
+fun main() {
+	val nums=arrayOf(1,2,3,65,5,666,32,1111,2,3)
+    var max=nums[0]
+    
+    for (i in nums)
+    {
+        if(i>max)
+        max=i
+    }
+    println(max)
+
+    }
+
+// ARRAYS ARE MUTABLE
+fun main() {
+	val nums=arrayOf(1,2,3,65,5,666,32,1111,2,3)
+
+nums[4]=999
+    for (i in nums)
+    {
+        println(i)
+
+    }
+    
+}
+
+
+/////////////////////////////////////////////////////////////////////////////////////////
+// LISTS ARE IMMUTABLE
+
+fun main() {
+	val nums=listOf(1,2,3,65,5,666,32,1111,2,3) //Immutable in nature
+
+nums[4]=999
+    for (i in nums)
+    {
+        println(i)
+
+    }
+    
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////
+//We can make List Mutable By making it "mutableListOf"
+fun main() {
+	val nums=mutableListOf(1,2,3,65,5,666,32,1111,2,3) //Immutable in nature
+
+nums[4]=999
+nums.add(333) //Difference between Array and Mutable list
+    for (i in nums)
+    {
+        println(i)
+
+    }
+    
+}
+
+
+/////////////////////////////////////////////////////////////////////////////////////////
+
+
 
