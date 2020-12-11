@@ -53,4 +53,14 @@ fun main() {
 //While Block 
 
 
+fun main() {
+	var x=5
+    while (x>1)
+    {
+    println("X value is $x")
+    x--
+	}
+    
+println("Done")
+}
 
