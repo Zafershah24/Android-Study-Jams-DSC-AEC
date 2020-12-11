@@ -146,7 +146,7 @@ nums[4]=999
 /////////////////////////////////////////////////////////////////////////////////////////
 //We can make List Mutable By making it "mutableListOf"
 fun main() {
-	val nums=mutableListOf(1,2,3,65,5,666,32,1111,2,3) //Immutable in nature
+	val nums=mutableListOf(1,2,3,65,5,666,32,1111,2,3) //Mutable in nature
 
 nums[4]=999
 nums.add(333) //Difference between Array and Mutable list
@@ -160,6 +160,34 @@ nums.add(333) //Difference between Array and Mutable list
 
 
 /////////////////////////////////////////////////////////////////////////////////////////
+//Map
+fun main() {
+	val map=mapOf(1 to "a", 2 to "b", 3 to "c")
+     map.forEach { (key, value) -> println("$key = $value") }
+     println(map)
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////
+//When (Similar to Switch Case in C Program)
+fun main() {
+	val age=4
+    
+    when(age)
+    {
+        in 1..18 -> println("You can't Vote Now")
+        18-> println("You are Finally 18")
+        else ->println("You can legally vote right Now")
+    }
+}
+
+
+/////////////////////////////////////////////////////////////////////////////////////////
+//FUNCTIONS
+
+
+    
+
+
 
 
 
