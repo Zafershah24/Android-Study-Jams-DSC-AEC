@@ -184,7 +184,50 @@ fun main() {
 /////////////////////////////////////////////////////////////////////////////////////////
 //FUNCTIONS
 
+fun main() {
+	
+  callName() 
+  }
 
+fun callName(){
+    println("Android is Awesome")
+}
+
+//Alternatively we can define Single Line Functions as 
+
+fun callName()= println("Android is Awesome")
+
+//Return Type of Integer Example
+
+fun main() {
+	
+  println(callName() )
+  }
+
+fun callName():Int= 3
+
+//Return Type of String Example
+
+
+fun main() {
+	
+  println(callName() )
+  }
+
+fun callName():String= "red"
+
+//Parameterized Functions
+fun main() {
+	
+  print(multiply(3,5))
+  }
+
+//Single Expression Function Definition
+// fun multiply(a:Int , b:Int ):Int = a*b 
+
+fun multiply(a:Int , b:Int ):Int {
+return a*b
+}
     
 
 
