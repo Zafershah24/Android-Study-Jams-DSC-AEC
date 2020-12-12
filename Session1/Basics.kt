@@ -1,4 +1,6 @@
 
+// ALL ABOUT KOTLIN BASICS ❤️//
+
 var myVariable="Hello" //Mutable Type
 myVariable="Hola" 
 print(myVariable.reversed()) //To Reverse a String
@@ -229,6 +231,92 @@ fun multiply(a:Int , b:Int ):Int {
 return a*b
 }
     
+/////////////////////////////////////////////////////////////////////////////////////////
+//DEFAULT ARGUMENT
+
+fun main() {
+	
+  print(multiply())
+  }
+
+//Default Parameter
+
+fun multiply(a:Int =2, b:Int =8):Int {
+return a*b
+}
+
+
+/////////////////////////////////////////////////////////////////////////////////////////
+//NAMED ARGUMENT
+fun main() {
+	
+  println(multiply(c=3,b=2,a=1))
+  }
+
+//Named Parameter
+
+fun multiply(a:Int =2, b:Int =8,c:Int=5 ):Int {
+return a*b-c
+}
+
+
+/////////////////////////////////////////////////////////////////////////////////////////
+//List uses in Argument
+fun main() {
+	val nums=listOf(3,6,7)
+  multiply(c=nums,b=2,a=1)
+  }
+
+//Named Parameter
+
+fun multiply(a:Int =2, b:Int =8,c:List<Int> ) {
+c.forEach{c->
+    println(a*b-c)
+}
+}
+
+
+////////////////////////////////////////////////////////////////////////////////////////
+//VARARG
+
+fun main() {
+	
+ val max=getMax(1,2,356,66,4444)
+ println(max)
+  }
+
+
+fun getMax(vararg nums:Int ):Int {
+    var max=nums[0]
+    for (num in nums)
+    {
+        if (num>max)
+        max=num
+    }
+    return max
+
+}
+
+
+////////////// Another Example //////////////////////
+
+fun main() {
+	
+  var result=multiply(1,2,3,4,5,6,7,8)
+  println(result)
+}
+
+
+
+fun multiply(vararg nums:Int ):Int {
+    var res=1
+    for (num in nums)
+    {res=res*num}
+    return res
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////
+//CLASSES
 
 
 
