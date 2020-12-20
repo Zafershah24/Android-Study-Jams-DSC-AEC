@@ -81,6 +81,35 @@ println(i)
 for (i in 10 downTo 5 step 2) // Top-Down implementation
 println(i)
 
+
+fun main() {
+    
+var num=5..9
+    for (i in num step 5)
+    {
+        println(i)
+    }
+ }
+//Until 
+
+fun main() {
+    
+var num=5 until 9
+    for (i in num)
+    {
+        println(i)
+    }
+ }
+///////
+fun main() {
+    
+var num='a' until 'z'
+    for (i in num)
+    {
+        println(i)
+    }
+ }
+
 /////////////////////////////////////////////////////////////////////////////////////////
 // Array Implementation (Arrays are Mutable in Nature)
 
@@ -101,7 +130,7 @@ fun main() {
     }
 }
 
-//Find the Greates Number from an Array
+//Find the Greatest Number from an Array
 
 fun main() {
 	val nums=arrayOf(1,2,3,65,5,666,32,1111,2,3)
@@ -171,13 +200,25 @@ fun main() {
 
 /////////////////////////////////////////////////////////////////////////////////////////
 //When (Similar to Switch Case in C Program)
+
+
 fun main() {
-	val age=4
+  /*val age=5
+    if (age <=17){
+        println("You can't Vote Now")
+    }
+    else if(age==18)
+    {
+    println("You are Finally 18 andcan legally vote right Now")
+    }
+    else
+    println("You are an Adult now")*/
+    val age=5
     
     when(age)
     {
         in 1..17 -> println("You can't Vote Now")
-        18-> println("You are Finally 18")
+        18-> println("You are Finally 18 and can legally vote right Now")
         else ->println("You can legally vote right Now")
     }
 }
@@ -255,13 +296,14 @@ fun main() {
 
 //Named Parameter
 
-fun multiply(a:Int =2, b:Int =8,c:Int=5 ):Int {
+fun multiply(a:Int, b:Int,c:Int):Int {
 return a*b-c
 }
 
 
+
 /////////////////////////////////////////////////////////////////////////////////////////
-//List uses in Argument
+//List usage in Argument
 fun main() {
 	val nums=listOf(3,6,7)
   multiply(c=nums,b=2,a=1)
@@ -279,6 +321,20 @@ c.forEach{c->
 ////////////////////////////////////////////////////////////////////////////////////////
 //VARARG
 
+/*
+fun main() {
+	val nums=arrayOf(1,2,356,66,4444)
+    var max=nums[0]
+    
+    for (i in nums)
+    {
+        if(i>max)
+        max=i
+    }
+    println(max)
+
+    }
+*/
 fun main() {
 	
  val max=getMax(1,2,356,66,4444)
