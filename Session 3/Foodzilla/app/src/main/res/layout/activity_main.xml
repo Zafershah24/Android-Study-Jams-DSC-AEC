@@ -54,8 +54,10 @@
 
     <ImageView
         android:id="@+id/img"
-        android:layout_width="280dp"
-        android:layout_height="310dp"
+        android:layout_width="310dp"
+        android:layout_height="302dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
         android:scaleType="centerCrop"
         app:layout_constraintStart_toEndOf="@+id/radioGroup"
         app:layout_constraintTop_toTopOf="parent"
