@@ -21,7 +21,8 @@ class MainActivity : AppCompatActivity() {
             val lettuce=btnLettuce.isChecked
             val onion=btnOnion.isChecked
             val ostring= "Your Order is \n"+
-                    "${menu.text} "+ "\nwith Extra"+
+                    "${menu.text} "+
+                    (if(cheese||olive||lettuce||onion) "\nwith Extra" else "")+
                     (if(cheese) "\nCheese" else "")+
                     (if(olive) "\nOlive" else "")+
                     (if(lettuce) "\nLettuce" else "")+
